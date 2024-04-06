@@ -47,6 +47,9 @@ else console.log("false");
 if (k && l) console.log("true");
 else console.log("false");
 
+if (k && l && m) console.log("true"); 
+else console.log("false");
+
 console.log(!k);
 
 if (k || m) console.log("true");

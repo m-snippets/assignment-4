@@ -79,18 +79,18 @@ else
     console.log("the person is not eligible to vote");
 // Assign a grade based on a numerical score.
 let score = 50;
-if (score >= 90)
-    console.log("the grade is A");
-if (score >= 80 && score <= 89)
-    console.log("the grade is B");
-if (score >= 70 && score <= 79)
-    console.log("the garde is C");
-if (score >= 60 && score <= 69)
-    console.log("the garde is D");
-if (score >= 50 && score <= 59)
-    console.log("the garde is E");
-if (score < 50)
-    console.log("the garde is F");
+let grade;
+grade =
+    score >= 90
+        ? "your grade is A"
+        : score >= 80
+            ? "your grade is B"
+            : score >= 70
+                ? "your grade is C"
+                : score >= 60
+                    ? "your garde is D"
+                    : "your grade is F";
+console.log(grade);
 // Find the maximum of three numbers.
 let p = 5;
 let j = 8;
@@ -103,4 +103,33 @@ if (maximum < j)
     maximum = j;
 if (maximum < B)
     maximum = B;
-console.log('the largest is ' + maximum);
+console.log("the largest is " + maximum);
+// Check if a given year is a leap year.
+let year = 2024;
+let isLeapyear = year % 4 == 0 && (year % 100 !== 0 || year % 400 == 0);
+console.log(`${year} is ${isLeapyear ? "a leap year " : "is not a leap year "}`);
+// Write a program that converts temperature from Fahrenheit to Celsius.
+let Celsius;
+let Fahrenheit = 50;
+Celsius = ((Fahrenheit - 32) * 5) / 9;
+console.log("the temprature in degree celsius is " + Celsius);
+// Check if a number is positive, negative, or zero.
+let number = 50;
+if (number > 0)
+    console.log(`${number} is a positive number`);
+else if (number < 0)
+    console.log(`${number} is negative`);
+else
+    console.log("the number is 0");
+// Write a program that prints the multiplication table of a given number up to 10.
+let F = 4;
+console.log(`${F} x 1 = ${F * 1}`);
+console.log(`${F} x 2 = ${F * 2}`);
+console.log(`${F} x 3 = ${F * 3}`);
+console.log(`${F} x 4 = ${F * 4}`);
+console.log(`${F} x 5 = ${F * 5}`);
+console.log(`${F} x 6 = ${F * 6}`);
+console.log(`${F} x 7 = ${F * 7}`);
+console.log(`${F} x 8 = ${F * 8}`);
+console.log(`${F} x 9 = ${F * 9}`);
+console.log(`${F} x 10 = ${F * 10}`);
